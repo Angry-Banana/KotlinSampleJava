@@ -1,7 +1,7 @@
 import kotlinx.coroutines.*
 import kotlinx.coroutines.GlobalScope.coroutineContext
 
-object Test {
+object CoroutinesTest {
 
     @JvmStatic
     fun main(args: Array<String>) {
