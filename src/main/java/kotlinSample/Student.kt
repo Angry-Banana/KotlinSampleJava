@@ -1,4 +1,4 @@
-package com.example.kotlinsample.kotlinSample
+package kotlinSample
 
 data class Student(
     var id: Int,

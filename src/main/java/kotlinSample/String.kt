@@ -1,4 +1,4 @@
-package com.example.kotlinsample.kotlinSample
+package kotlinSample
 
 fun String.lettersCount(): Int {
     var count = 0

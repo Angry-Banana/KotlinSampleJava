@@ -1,5 +1,8 @@
-package com.example.kotlinsample.kotlinSample
+package kotlinSample
 
+/**
+ * 单例
+ */
 object Singleton {
 
     fun doSomething() {
