@@ -22,8 +22,10 @@ object Main {
      */
     fun testParams() {
         val paramSample = ParamSample()
-        paramSample.test(100, var3 = 100)
+        paramSample.test(10)
+        paramSample.test(10, "test", 11)
         paramSample.test(var2 = "test")
+        paramSample.test(var2 = "test", var3 = 11)
     }
 
     /**
