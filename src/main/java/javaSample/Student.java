@@ -48,4 +48,33 @@ public class Student {
         this.grade = grade;
     }
 
+    @Override
+    public String toString() {
+        return "Student(id=" + this.id + ", name=" + this.name + ", phoneNum=" + this.phoneNum + ", address=" + this.address + ", grade=" + this.grade + ")";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this != obj) {
+            if (obj instanceof Student) {
+                Student student = (Student) obj;
+                if (this.id == student.getId()
+                        && this.name.equals(student.name)
+                        && this.phoneNum.equals(student.phoneNum)
+                        && this.address.equals(student.address)
+                        && this.grade.equals(student.grade)) {
+                    return true;
+                }
+            }
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
