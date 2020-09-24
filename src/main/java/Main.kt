@@ -22,6 +22,7 @@ object Main {
      */
     fun testParams() {
         val paramSample = ParamSample()
+        paramSample.test()
         paramSample.test(10)
         paramSample.test(10, "test", 11)
         paramSample.test(var2 = "test")
@@ -44,4 +45,5 @@ object Main {
 //        str2!!.length
 //        str2?.length
     }
+
 }

@@ -6,7 +6,7 @@ object CoroutinesTest {
     @JvmStatic
     fun main(args: Array<String>) {
         println("Main Thread Name: ${Thread.currentThread().name} + Main ThreadId:${Thread.currentThread().id}")
-        asyncAndWait2()
+        lowConsume()
         println("Main Thread Name: ${Thread.currentThread().name} + Main ThreadId:${Thread.currentThread().id}")
         while (true) {
 
@@ -79,9 +79,9 @@ object CoroutinesTest {
             }.await()
             val result2 = async {
                 delay(1000)
-                4 + 6
+                result1 + 6
             }.await()
-            println("result is ${result1 + result2}")
+            println("result is $result2")
             val end = System.currentTimeMillis()
             println("time: ${end - start}")
         }

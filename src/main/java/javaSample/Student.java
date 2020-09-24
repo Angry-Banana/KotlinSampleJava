@@ -72,9 +72,4 @@ public class Student {
         }
 
     }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
 }
